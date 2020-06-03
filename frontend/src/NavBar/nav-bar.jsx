@@ -4,11 +4,9 @@ import logo from '../assets/logo.svg'
 const NavBar=()=>(
     
         <div className='navbarre'> 
-                <div  className='logo-container'>   
-                    
+                <div  className='logo-container'>           
                     <i class="fa fa-bars mobile-menu"></i>
-
-                   <img className='logo'src={logo} alt="world"/>      
+                    <img className='logo'src={logo} alt="world"/>      
                 </div>
 
                 <div className='nav-items'>
