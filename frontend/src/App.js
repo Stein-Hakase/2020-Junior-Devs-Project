@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import HelloWorld from "./HelloWorld";
+import NavBar from "./NavBar/nav-bar";
+
+import './App.css'
 
 class App extends Component {
   constructor(props){
@@ -10,35 +12,18 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
-    fetch("/api/getSomething")
-    .then(res => res.json())
-    .then(list => this.setState({ list }))
-  }
+  // componentDidMount() {
+  //   fetch("/api/getSomething")
+  //   .then(res => res.json())
+  //   .then(list => this.setState({ list }))
+  // }
 
   render() {
     const { list } = this.state
 
     return (
-      <div>
-        <HelloWorld text="Welcome to Junior Devs" />
-
-        {list.length ? (
-        <div>
-          {list.map((item, index) => {
-            return(
-              <div key={index}>
-                {item}
-              </div>
-            )
-          })}
-        </div>
-        ) : (
-          <div>
-            <h2>No List Items found</h2>
-          </div>
-          )
-        }
+      <div >
+            <NavBar/>
       </div>
     );
   }
