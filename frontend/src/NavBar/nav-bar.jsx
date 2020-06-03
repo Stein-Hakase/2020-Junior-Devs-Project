@@ -13,17 +13,17 @@ const NavBar=()=>(
 
                 <div className='nav-items'>
                     <div className='nav-grp1'>
-                        <span className='nav-item'
+                        <a href='#'className='nav-item'
                              style={{color:'#547818'}}
                         >
                             home
-                        </span>
-                        <span className='nav-item'>courses</span>
-                        <span className='nav-item'>about</span>
+                        </a>
+                        <a href='#'className='nav-item'>courses</a>
+                        <a href='#'className='nav-item'>about</a>
                     </div>
                      <div className='nav-grp2'>
-                        <span className='nav-item'>register</span>
-                        <span className='nav-item'>login</span>
+                        <a href='#'className='nav-item'>register</a>
+                        <a href='#'className='nav-item'>login</a>
                      </div>
                  </div>
            

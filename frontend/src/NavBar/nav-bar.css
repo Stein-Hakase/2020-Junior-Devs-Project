@@ -59,9 +59,12 @@ body{
      display: flex;
      justify-content: flex-end;
      align-items: center;
+     
     }
 .nav-item{
     margin: 0 15px;
     padding: 10px;
+    text-decoration: none;
+    color: inherit;
 }
     
